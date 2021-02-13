@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <!-- Añadimos una hoja de estilos externa que pertenece al framework de Bootstrap, en este momento ya lo tenemos incorporado a nuestro proyecto y se agrega antes de todas las demás hojas de estilo para cargar nuestro CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- En un archivo aparte definimos los media quieries (mobile.css), ya que permite su separación con los estilos y la opción de utilizar o no este archivo dependiendo de los requerimientos -->
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Brand📦</title>
+</head>
+
+<body>
+    <!-- fadeInDown es el nombre de la clase de nuestra animación definida en animation.css -->
+    <nav class="fadeInDown">
+        <!-- # añade la funcionalidad de click -->
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li>
+                <a href="faqs.html">Faqs</a>
+            </li>
+            <li>
+                <a href="producto.html">Producto y descripción</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- fadeIn es el nombre de la clase de nuestra animación definida en animation.css -->
+    <h1 class="main_section fadeIn">
+        Este es un producto increible, no se que haces viendo que lo puedes tener
+    </h1>
+    <!-- Inicio productos -->
+    <div class="products">
+        <!-- fadeInUp es el nombre de la clase de nuestra animación definida en animation.css -->
+        <div class="product fadeInUp">
+            <div class="content">
+                <div class="image-product">
+                    <img src="images/box1.png" alt="">
+                </div>
+                <h3>Producto 1</h3>
+                <p>Miles de productos hay en el marcado, pero nada como una caja de gatos</p>
+                <!-- El button solo funciona en formularios, por lo tanto el atributo href no funciona, pero aplicaremos la siguente estrategia para que nos mande al archivo (vista) venta.html -->
+                <a href="venta.html">
+                    <button class="main_btn">Lo quiero</button>
+                </a>
+            </div>
+        </div>
+        <!-- fadeInUp es el nombre de la clase de nuestra animación definida en animation.css -->
+        <div class="product fadeInUp">
+            <div class="content">
+                <div class="image-product">
+                    <img src="images/box2.png" alt="">
+                </div>
+                <h3>Producto 2</h3>
+                <p>Miles de productos hay en el marcado, pero nada como una caja de gatos</p>
+                <!-- El button solo funciona en formularios, por lo tanto el atributo href no funciona, pero aplicaremos la siguente estrategia para que nos mande al archivo (vista) venta.html -->
+                <a href="venta.html">
+                    <button class="main_btn">Lo quiero</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin productos -->
+    <!-- Inicia beneficios -->
+    <div class="beneficios">
+        <div class="beneficio">
+            <div class="content_beneficio">
+                <img src="images/b1.png" alt="">
+                <h3>Los mas suavecitos</h3>
+                <p class="text_beneficio">
+                    Miles de productos hay en el mercado, pero nada como una caja con gatitos
+                </p>
+            </div>
+        </div>
+        <div class="beneficio">
+            <div class="content_beneficio">
+                <img src="images/b2.png" alt="">
+                <h3>Lo más increíble</h3>
+                <p class="text_beneficio">
+                    Miles de productos hay en el mercado, pero nada como una caja con gatitos
+                </p>
+            </div>
+        </div>
+        <div class="beneficio">
+            <div class="content_beneficio">
+                <img src="images/b3.png" alt="">
+                <h3>Lo mas confiable</h3>
+                <p class="text_beneficio">
+                    Miles de productos hay en el mercado, pero nada como una caja con gatitos
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Fin beneficios -->
+    <hr>
+    <!-- Inicia menciones -->
+    <h2 class="mention_title">Menciones</h2>
+    <div class="mentions">
+        <div class="mention">
+            <div class="content_mention">
+                <img src="images/p1.png" alt="">
+                <div class="text">
+                    <h3>Mario</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="mention">
+            <div class="content_mention">
+                <img src="images/p2.png" alt="">
+                <div class="text">
+                    <h3>Maria</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="mention">
+            <div class="content_mention">
+                <img src="images/p3.png" alt="">
+                <div class="text">
+                    <h3>Fabiola</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="mention">
+            <div class="content_mention">
+                <img src="images/p4.png" alt="">
+                <div class="text">
+                    <h3>Andrea</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de menciones -->
+    <!-- Inicio de footer -->
+    <footer>
+        <div class="option">Terminos y condiciones</div>
+        <!-- mailto:correo me permite abrir una ventana de correo para la comunicación -->
+        <div class="option contact"><a href="mailto:contacto@brand.com">contacto@brand.com</a></div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

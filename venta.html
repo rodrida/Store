@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <!-- Añadimos una hoja de estilos externa que pertenece al framework de Bootstrap, en este momento ya lo tenemos incorporado a nuestro proyecto y se agrega antes de todas las demás hojas de estilo para cargar nuestro CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- En un archivo aparte definimos los media quieries (mobile.css), ya que permite su separación con los estilos y la opción de utilizar o no este archivo dependiendo de los requerimientos -->
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Brand📦</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li>
+                <a href="faqs.html">Faqs</a>
+            </li>
+            <li>
+                <a href="producto.html">Producto y descripción</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- br es una etiqueta que representa saltos de línea, pero es una mala práctica usarlo fuera de un texto
+    <br> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="modulo_pago">
+                    <div class="modulo_pago_images">
+                        <img src="images/box2.png" alt="">
+                    </div>
+                    <h3>Producto 1</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="modulo_pago">
+                    <!-- La URL nos lleva al sistema de pagos PayPal de nuestra cuenta de negocios para recibir el pago -->
+                    <!-- El método POST representa el protocolo para la comunicación correcta entre los sistemas (POST - enviar los datos al sistema) -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FKABC5VN7W264"
+                        method="POST">
+                        <label for="name">Nombre</label>
+                        <br>
+                        <!-- placeholder es un atributo y representa un marcador de posición que permite visualizar un mensaje dentro del input tipo texto -->
+                        <!-- Los name en los input, representan la forma de como PayPal maneja estos datos para el autollenado de su propio formulario y así el usuario no tiene que ingresar 2 veces la misma información -->
+                        <input type="text" class="data" placeholder="" id="name" name="first_name">
+                        <br>
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input type="text" class="data" placeholder="" id="email" name="email">
+                        <br>
+                        <label for="phone">Teléfono</label>
+                        <br>
+                        <input type="text" class="data" placeholder="" id="phone" name="night_phone_a">
+                        <!-- La forma más habitual de hacer botones para un formulario es con input, y el atributo type="submit" lo cambia a un boton de envio de datos, esos datos son enviados al valor del atributo action del form -->
+                        <!-- El atributo value permite modificar el texto de mi input en modo boton -->
+                        <input type="submit" class="main_btn" name="submit" value="Confirmar pago">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de footer -->
+    <footer>
+        <div class="option">Terminos y condiciones</div>
+        <div class="option">contacto@brand.com</div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

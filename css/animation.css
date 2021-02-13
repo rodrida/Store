@@ -1,0 +1,51 @@
+.fadeIn {
+    /* webkit forza a que se cumpla la animación independientemente del navegador que se utilice, se utiliza de la siguiente forma en todas las líneas */
+    /* -webkit-animation-duration: 4s; */
+    animation-duration: 4s;  /* define la duración */
+    animation-fill-mode: both;  /* se cumplen los keyframes de ida como de regreso */
+    animation-name: fadeIn;  /* define el nombre de la animación */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInDown {
+    animation-duration: 1s;  /* define la duración */
+    animation-fill-mode: both;  /* se cumplen los keyframes de ida como de regreso */
+    animation-name: fadeInDown;  /* define el nombre de la animación */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-100%,0);  /* le da posición a nuestro elemento, -100% hace que vaya de arriba hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);  /* le da posición a nuestro elemento, 0 hace que vaya a su posición original */
+    }
+}
+
+/* define la animación fadeInDown pero al reves */
+.fadeInUp {
+    animation-duration: 1s;  /* define la duración */
+    animation-fill-mode: both;  /* se cumplen los keyframes de ida como de regreso */
+    animation-name: fadeInUp;  /* define el nombre de la animación */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,100%,0);  /* le da posición a nuestro elemento, -100% hace que vaya de arriba hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);  /* le da posición a nuestro elemento, 0 hace que vaya a su posición original */
+    }
+}

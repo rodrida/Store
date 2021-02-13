@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <!-- Añadimos una hoja de estilos externa que pertenece al framework de Bootstrap, en este momento ya lo tenemos incorporado a nuestro proyecto y se agrega antes de todas las demás hojas de estilo para cargar nuestro CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- En un archivo aparte definimos los media quieries (mobile.css), ya que permite su separación con los estilos y la opción de utilizar o no este archivo dependiendo de los requerimientos -->
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Brand📦</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li>
+                <a href="faqs.html">Faqs</a>
+            </li>
+            <li>
+                <a href="#">Producto y descripción</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Aqui empezamos a usar la definición de nuestro Sistema de Grillas definido en el archivo grid.css -->
+    <div class="container fadeIn">
+        <br>
+        <h2>Producto y descripción</h2>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/ben1.png" alt="">
+            </div>
+            <div class="col-8">
+                <h3>Producto Genial</h3>
+                <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 no-desk">
+                <img src="images/ben2.png" alt="">
+            </div>
+            <div class="col-8">
+                <h3>Producto Impresionantes</h3>
+                <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+            </div>
+            <div class="col-4 no-mobile">
+                <img src="images/ben2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/ben3.png" alt="">
+            </div>
+            <div class="col-8">
+                <h3>Producto Suavecito</h3>
+                <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de footer -->
+    <footer>
+        <div class="option">Terminos y condiciones</div>
+        <div class="option">contacto@brand.com</div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
